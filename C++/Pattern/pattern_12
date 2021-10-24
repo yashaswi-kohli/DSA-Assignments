@@ -1,0 +1,38 @@
+void pattern12()
+{
+
+/*
+--------------------------------------------------
+12.  * * * * *
+      * * * *
+       * * *
+        * *
+         *
+         *
+        * *
+       * * *
+      * * * *
+     * * * * *
+*/
+
+
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+
+    for(int row = 1; row <= 2*n; ++row)
+    {
+        int noOfcol = row>n ? row - n : n - row + 1;
+        for (int noOfSpace = 0; noOfSpace < n - noOfcol; noOfSpace++)
+        {
+            cout<<" ";
+        }
+        for (int col = 1; col <= noOfcol; ++col)
+        {
+            cout<<"* ";
+        }
+         cout<<endl;
+    
+    }
+    
+}
