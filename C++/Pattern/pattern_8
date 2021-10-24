@@ -1,0 +1,33 @@
+void pattern8()
+{
+
+/*
+--------------------------------------------------
+8.      *
+       ***
+      *****
+     *******
+    *********
+*/
+
+
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+
+    for(int row = 1; row <= n; ++row)
+    {
+        for (int noOfSpace = 0; noOfSpace < n - row; noOfSpace++)
+        {
+            cout<<" ";
+        }
+        int a = 2*(row - 1) + 1;
+        for (int col = 1; col <= a; ++col)
+        {
+            cout<<"*";
+        }
+         cout<<endl;
+    
+    }
+   
+}
