@@ -1,0 +1,32 @@
+void pattern14()
+{
+
+/*
+--------------------------------------------------
+14.  *********
+      *     *
+       *   *
+        * *
+         *
+*/
+
+
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+
+    for(int row = 1; row <= n; ++row)
+    {
+        for (int noOfSpace = 0; noOfSpace < n - (n - row + 1); noOfSpace++)
+        {
+            cout<<" ";
+        }
+        int a = 2*((n - 1) - row + 1) + 1;
+        for (int col = 1; col <= a; ++col)
+        {
+            row == 1 ? cout<<"*" : col == 1 || col == a ? cout<<"*" : cout<<" "; 
+        }
+        cout<<endl;
+    }
+    
+}
