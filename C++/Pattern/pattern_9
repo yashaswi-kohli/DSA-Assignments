@@ -1,0 +1,33 @@
+void pattern9()
+{
+
+/*
+--------------------------------------------------
+9.  *********
+     *******
+      *****
+       ***
+        *
+*/
+
+
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+
+    for(int row = 1; row <= n; ++row)
+    {
+        for (int noOfSpace = 0; noOfSpace < n - (n - row + 1); noOfSpace++)
+        {
+            cout<<" ";
+        }
+        int a = 2*((n - 1) - row + 1) + 1;
+        for (int col = 1; col <= a; ++col)
+        {
+            cout<<"*";
+        }
+         cout<<endl;
+    
+    }
+    
+}
