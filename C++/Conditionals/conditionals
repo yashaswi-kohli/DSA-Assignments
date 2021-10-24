@@ -1,0 +1,1029 @@
+
+
+
+1. Area Of Circle 
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int r;
+   double area;
+   cout<<"Enter radius: ";
+   cin>>r;
+   
+   area = (3.141*r*r);
+  
+   cout<<"Area of circle is: "<<area;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+2. Area Of Triangle
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int h, b, area;
+   cout<<"Enter base and height: ";
+   cin>>b>>h;
+   
+   area = (b*h*0.5);
+  
+   cout<<"Area is: "<<area;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+3. Area Of Rectangle Program 
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int l, w, area;
+   cout<<"Enter length and width: ";
+   cin>>l>>w;
+   
+   area = (l*w);
+  
+   cout<<"Area is: "<<area;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+4. Area Of Isosceles Triangle 
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int h, b, area;
+   cout<<"Enter base and height: ";
+   cin>>b>>h;
+   
+   area = (b*h*0.5);
+  
+   cout<<"Area is: "<<area;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+5. Area Of Parallelogram
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int h, b, area;
+   cout<<"Enter base and height: ";
+   cin>>b>>h;
+   
+   area = (b*h);
+  
+   cout<<"Area is: "<<area;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+6. Area Of Rhombus
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int ld, sd, area;
+   cout<<"Enter long diagonal and short diagonal: ";
+   cin>>ld>>sd;
+   
+   area = (ld*sd*0.5);
+  
+   cout<<"Area is: "<<area;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+7. Area Of Equilateral Triangle
+
+
+#include <iostream>
+#include<math.h> // Used for sqrt() function
+using namespace std;
+int main()
+{
+   int side, area;
+   cout<<"Enter side: ";
+   cin>>side;
+   
+   area = ((sqrt(3) / 4) * (side * side));
+  
+   cout<<"Area is: "<<area;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+8. Perimeter Of Circle
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int r;
+   float perimeter;
+   cout<<"Enter radius: ";
+   cin>>r;
+   perimeter = (2*3.142*r);
+   
+   cout<<"The perimeter is: "<<perimeter;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+9. Perimeter Of Equilateral Triangle
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int side, perimeter;
+   cout<<"Enter side: ";
+   cin>>side;
+   perimeter = (3*side);
+   
+   cout<<"The perimeter is: "<<perimeter;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+10. Perimeter Of Parallelogram
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int s, b, perimeter;
+   cout<<"Enter side and base: ";
+   cin>>s>>b;
+   perimeter = 2*(b*s);
+   
+   cout<<"The perimeter is: "<<perimeter;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+11. Perimeter Of Rectangle
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int h, w, perimeter;
+   cout<<"Enter height and width: ";
+   cin>>h>>w;
+   perimeter = 2*(h+w);
+   
+   cout<<"The perimeter is: "<<perimeter;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+12. Perimeter Of Square
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int side, perimeter;
+   cout<<"Enter side: ";
+   cin>>side;
+   perimeter = (4*side);
+   
+   cout<<"The perimeter is: "<<perimeter;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+13. Perimeter Of Rhombus
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int side, perimeter;
+   cout<<"Enter side: ";
+   cin>>side;
+   perimeter = (4*side);
+   
+   cout<<"The perimeter is: "<<perimeter;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+14. Volume Of Cone 
+
+#include <iostream>
+#define PI 3.14159
+using namespace std;
+int main()
+{
+   int r, h;
+   double volume;
+   cout<<"Enter radius and height: ";
+   cin>>r>>h;
+   
+   volume = (PI*r*r*h)/3;
+  
+   cout<<"Volume is: "<<volume;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+15. Volume Of Prism
+
+#include <iostream>
+#include<math.h> // Used for sqrt() function
+#define PI 3.14159
+using namespace std;
+int main()
+{
+   int b, h;
+   double volume;
+   cout<<"Enter base and height: ";
+   cin>>b>>h;
+   
+   volume = ((sqrt(3)/4)*b*b*h);
+  
+   cout<<"Volume is: "<<volume;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+16. Volume Of Cylinder
+
+#include <iostream>
+#define PI 3.14159
+using namespace std;
+int main()
+{
+   int r, h;
+   double volume;
+   cout<<"Enter radius and height: ";
+   cin>>r>>h;
+   
+   volume = (PI*r*r*h);
+  
+   cout<<"Volume is: "<<volume;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+17. Volume Of Sphere
+
+#include <iostream>
+#define PI 3.14159
+using namespace std;
+int main()
+{
+   int r;
+   double volume;
+   cout<<"Enter radius: ";
+   cin>>r;
+   
+   volume = ((4/3)*PI*r*r*r);
+  
+   cout<<"Volume is: "<<volume;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+18. Volume Of Pyramid
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int b, h, volume;
+   cout << "Enter base and height: ";
+   cin >> b >> h;
+   volume = ((0.166) * b * b * h);
+   cout << "Volume is: " << volume;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+19. Curved Surface Area Of Cylinder
+
+#include <iostream>
+#define PI 3.14159
+using namespace std;
+int main()
+{
+   int r, h;
+   double csa;
+   cout<<"Enter radius and height: ";
+   cin>>r>>h;
+   
+   csa = (2*PI*r*h);
+  
+   cout<<"CSA is: "<<csa;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+20. Total Surface Area Of Cube
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int b, h, volume;
+   cout << "Enter base and height: ";
+   cin >> b >> h;
+   volume = ((0.166) * b * b * h);
+   cout << "Volume is: " << volume;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+21. Fibonacci Series
+
+-------------------------------------------
+
+1st type of question
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, n, i;
+    cin >> a >> b >> n;
+    for(i=a; i<=n; i=a+b)
+    {
+        cout<<i<<" ";  
+        a = b;
+        b = i;
+    }
+    
+    return 0;
+}
+
+-------------------------------------------
+
+2nd type of question
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, n, i;
+    cin >> a >> b >> n;
+    for(int c = 2; c <= n; c++)
+    {
+        int d = b;
+        b = b + a;
+        a = d;
+    }
+    cout<<b;
+    return 0;
+}
+
+
+
+-------------------------------------------------------------------------------------------
+
+22. [Subtract the Product and Sum of Digits of an Integer]
+https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+
+
+
+-------------------------------------------------------------------------------------------
+23. Input a number and print all the factors of that number (use loops).
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    for(int i = 1; i <= n; i++)
+    {
+        if(n%i == 0)
+        {
+            cout<<i<<" ";
+        }
+    }
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+24. Take integer inputs till the user enters 0 and print the sum of all numbers
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, sum = 0;
+    do
+    {
+        cout << "Enter number: ";
+        cin >> n;
+        sum = sum + n;
+    } while(n != 0);
+    cout << sum;
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+25. Take integer inputs till the user enters 0 and print the largest number from all.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, max = 0;
+    do
+    {
+        cout << "Enter number: ";
+        cin >> n;
+        if (n > max)
+        {
+            max = n;
+        }
+    } while (n != 0);
+    cout << max;
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+### Intermediate Programs
+
+
+1. Factorial Program
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a;
+   cout<<"Enter number: ";
+   cin>>a;
+   int factorial = 1;
+   for(int i = a ; i > 0; i--)
+   {
+      //factorial = factorial * i;
+      factorial *= i;
+   }
+   cout<<"The factorial of "<<a<<" is: "<<factorial;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+2. Calculate Electricity Bill
+
+
+-------------------------------------------------------------------------------------------
+3. Calculate Average Of N Numbers
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int n, t;
+   float avg = 0;
+   cout<<"Enter how many numbers of avg you want: ";
+   cin>>n;
+   t = n;
+   for(int i = n; i != 0; i--)
+   {
+      cout<<"Enter number: ";
+      cin>>t;
+      avg += t;
+   }
+   avg /= n;
+   cout<<"The avg of "<<n<<" number's is: "<<avg;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+4. Calculate Discount Of Product
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c, dis;
+    cout<<"Enter the price of product & discount: ";
+    cin>>a>>b;
+    c = b*a/100;
+    dis = a - c;
+    cout<<"After "<<b<<"%"" discount the price of product is: "<<dis;
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+5. Calculate Distance Between Two Points 
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int x1, x2, y1, y2, d;
+    cout<<"Enter the coordinate's of 1st point: ";
+    cin>>x1>>y1;
+    cout<<"Enter the coordinate's of 2nd point: ";
+    cin>>x2>>y2;
+    d = sqrt( ( (x2 - x1)*(x2 - x1) ) -  ( (y2 - y1)*(y2 - y1) ) );
+    cout<<"The distance between two points is: "<<d;
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+6. Calculate Commission Percentage
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int s, c;
+    float rc;
+    cout<<"Enter amount of sales and rate of commission: ";
+    cin>>s>>rc;
+    c = s*rc/100;
+    cout<<"The commission  is: "<<c<<".";
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+7. Power
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, i, n = 1;
+    cout<<"Enter number and it's power: ";
+    cin>>a>>b;
+    for(i = 1; n <=b; n++)
+    {
+        i*=a;
+    }
+    
+    cout<<a<<" power "<<b<<" is: "<<i<<".";
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+8. Calculate Depreciation of Value
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+int main()
+{
+    int v, r, t;
+    cout<<"Enter the Initial value: ";
+    cin>>v;
+    cout<<"Enter the rate of depreciation: ";
+    cin>>r;
+    cout<<"Enter the time(in years): ";
+    cin>>t;
+    float d = v * pow((1 - r / 100), t);
+    cout<<"The deprecation value is: "<<d;
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+9. Calculate Batting Average
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int r, t;
+   float ba;
+   cout<<"Enter number of runs: ";
+   cin>>r;
+   cout<<"Enter number of time's out: ";
+   cin>>t;
+   ba = r/t;
+   cout<<"Batting average is: "<<ba;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+10. Calculate CGPA 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   float n, t;
+   float CGPA = 0;
+   cout<<"Enter Number of Subjects: ";
+   cin>>n;
+   t = n;
+   for(int i = n; i != 0; i--)
+   {
+      cout<<"Enter number: ";
+      cin>>t;
+      CGPA += t;
+   }
+   
+   CGPA /= n;
+   CGPA *=9.5;
+   cout<<"The CGPA is: "<<CGPA;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+11. Compound Interest 
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+   float r, t, p, ci;
+   cout<<"Enter principal: ";
+   cin>>p;
+   cout<<"Enter rate: ";
+   cin>>r;
+   cout<<"Enter time in year's: ";
+   cin>>t;
+   ci = p * ( (pow( (1 + r / 100), t) - 1));
+   cout<<"Compound Interest is: "<<ci;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+12. Calculate Average Marks
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int n, t;
+   float avg = 0;
+   cout<<"Enter Number of Subjects: ";
+   cin>>n;
+   t = n;
+   for(int i = n; i != 0; i--)
+   {
+      cout<<"Enter number: ";
+      cin>>t;
+      avg += t;
+   }
+   avg /= n;
+   cout<<"The Average Marks is: "<<avg;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+13. Addition Of Two Numbers
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, b;
+   cout<<"Enter two numbers: "<<endl;
+   cin>>a>>b;
+   cout<<"The sum of two numbers is: "<<a + b;
+   return 0;
+}
+ 
+
+-------------------------------------------------------------------------------------------
+14. Sum Of N Numbers
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int n, t, sum;
+   cout<<"Enter how many numbers of sum you want: ";
+   cin>>n;
+   
+   for(int i = n; i != 0; i--)
+   {
+      cout<<"Enter number: ";
+      cin>>t;
+      sum += t;
+   }
+   cout<<"The sum of "<<n<<" number's is: "<<sum;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+15. Armstrong Number 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, b = 0, c;
+   cout<<"Enter a number: ";
+   cin>>a;
+   
+   for(int i = a; i > 0; i /= 10)
+   {
+      
+      c = (i%10);
+      c = (c*c*c);
+      b += c;
+   }
+   if(a == b)
+   {
+      cout<<a<<" is a Armstrong number.";
+   }
+   else
+   {
+      cout<<a<<" is not a Armstrong number.";
+   }
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+16. Find Ncr & Npr
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int n, r, a = 1,d =1, f = 1;
+   cout<<"Enter n & r: ";
+   cin>>n>>r;
+   for(int i = n; i > 0; i--)
+   {
+      a *= i;
+   }
+   for(int b = r; b > 0; b--)
+   {
+      d *= b;
+   }
+   for(int e = (n-r); e > 0; e--)
+   {
+      f *= e;
+   }
+   float P = a/f;
+   float C = a/(d*f);
+   cout<<"Permutation: "<<P<<endl;
+   cout<<"Combination: "<<C;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+17. Reverse A String 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   string a;
+   cout<<"Enter a string: ";
+   cin>>a;
+   for(int i = a.size(); i >= 0; i--)
+   {
+      cout<<a[i]<<"";
+   }
+   return 0;
+} 
+
+-------------------------------------------------------------------------------------------
+18. Find if a number is palindrome or not 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, b, c=0;
+   cout<<"Enter a number: ";
+   cin>>a;
+   
+   for(int i = a; i > 0; i /= 10)
+   {
+      
+      b = (i%10);
+      c = (c*10)+b;
+   }
+   if(a == c)
+   {
+      cout<<a<<" is a palindrome number.";
+   }
+   else
+   {
+      cout<<a<<" is not a palindrome number.";
+   }
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+19. Future Investment Value
+
+-------------------------------------------------------------------------------------------
+20. HCF Of Two Numbers Program
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b;
+    cout<<"Enter two number: ";
+    cin>>a>>b;
+    for(int i = (a>b)?b:a; i <=(a>b)?b:a; i--)
+    {
+        if( ((a>b)?a:b) % i == 0)
+        {
+            cout<<i<<" is the HCF of "<<a<<" and "<<b<<".";
+            break;
+        }
+    }
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+21. LCM Of Two Numbers
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c=1;
+    cout<<"Enter two number: ";
+    cin>>a>>b;
+    for (int i = (a>b)?a:b; i <= (a*b); i *= c)
+    {
+        if(i%b==0)
+        {
+            cout<<i<<" is the LCM for "<<a<<" and "<<b<<".";
+            break;
+        }
+        c++;
+    }
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+22. Program Vowel Or Consonant 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    char a;
+    cout<<"Enter a alphabet: ";
+    cin>>a;
+    if(a == 'a' || a == 'A' || a == 'e' || a=='E' || a=='i' || a=='I' || a=='o' || a=='O' || a=='u' || a=='U')
+    {
+        cout<<"The alphabet "<<a<<" is a Vowel.";
+    }
+    else
+    {
+        cout<<"The alphabet "<<a<<" is a Consonant.";
+    }
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+23. Perfect Number 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, i, sum = 0;
+   cout<<"Enter a number: ";
+   cin>>a;
+   for(i = 1; i <= a/2; i++)
+   {
+      if(a % i == 0)
+      {
+         sum += i;
+      }
+   }
+   
+   if(sum == a)
+   {
+      cout<<a<<" is a perfect number.";
+   }
+   else
+   {
+      cout<<a<<" is not a perfect number.";
+   }
+   
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+24. Check Leap Year Or Not
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int year;
+   cout<<"Enter a year: ";
+   cin>>year;
+   if(year % 400 == 0)
+   {
+      cout<<"It is a leap year.";
+   }
+   else
+   {
+      if(year % 4 == 0)
+      {
+         cout<<"It is a leap year";
+      }
+      else
+      {
+         cout<<"It is not a leap year.";
+      }
+   }
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+
+25. Sum Of A Digits Of Number
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, sum = 0;
+   cout<<"Enter a number: ";
+   cin>>a;
+   for (; a > 0; a = a / 10)
+   {
+      sum = sum + (a % 10);
+   }
+   cout<<"Sum Of A Digits Of Number is: "<<sum;
+   
+
+-------------------------------------------------------------------------------------------
+26. Kunal is allowed to go out with his friends only on the even days of a given month. Write a program to count the number of days he can go out in the month of August.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, count = 0;
+   for (int i = 1; i <= 31; i++)
+   {
+      if(i%2 == 0)
+      {
+         count++;
+      }
+   }
+   cout<<"No. of days Kunal can go out in the month of August is: "<<count;
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+27. Write a program to print the sum of negative numbers, sum of positive even numbers and the sum of positive odd numbers from a list of numbers (N) entered by the user. The list terminates when the user enters a zero.
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, sump = 0, sumn = 0;
+    do
+    {
+        cout<<"Enter a number: ";
+        cin>>n;
+        if(n>0)
+        {
+            sump += n;
+        }
+        else if(n<0)
+        {
+            sumn += n;
+        }
+    } while (n != 0);
+    cout<<"The sum of negative number: "<<sumn<<endl;
+    cout<<"The sum of positive number: "<<sump;
+    return 0;
+    
+}
+
