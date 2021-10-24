@@ -1,0 +1,27 @@
+void pattern20()
+{
+
+/*
+--------------------------------------------------
+20.    ****
+       *  *
+       *  *
+       *  *
+       ****
+*/
+
+
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+
+    for(int row = 1; row <= n; ++row)
+    {
+        for (int col = 1; col <= n - 1; ++col)
+        {
+            col == 1 || col == n - 1 || row == 1 || row == n ? cout<<"*" : cout<<" ";
+        }
+        cout<<endl;
+    }
+    
+}
