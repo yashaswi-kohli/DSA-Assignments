@@ -1,0 +1,315 @@
+	1. Define two methods to print the maximum and the minimum number respectively among three numbers entered by the user.
+
+First Method: 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, b, c;
+   cout<<"Enter three number: "<<endl;
+   cin>>a>>b>>c;
+   if (a>b)
+   {
+      if (a>c)
+      {
+         cout<<a<<" is maximum among all three numbers."<<endl;
+         
+         if(b>c)
+         {
+            cout<<c<<" is minimum among all three numbers."<<endl;
+         }
+         else
+         {
+            cout<<b<<" is minimum among all three numbers."<<endl;
+         }
+      }
+      else
+      {
+         cout<<c<<" is maximum among all three numbers."<<endl;
+         cout<<b<<" is minimum among all three numbers."<<endl;
+      }
+   }
+   else
+   {
+      if(b>c)
+      {
+         cout<<b<<" is maximum among all three numbers."<<endl;
+         if (a>c)
+         {
+            cout<<c<<" is minimum among all three numbers."<<endl;
+         }
+         else
+         {
+            cout<<a<<" is minimum among all three numbers."<<endl;
+         }
+      }
+      else
+      {
+         cout<<c<<" is maximum among all three numbers."<<endl;
+         cout<<a<<" is minimum among all three numbers.";
+      }
+   }
+
+   return 0;
+}
+
+
+Second Method: 
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int max, min, a, b, c;
+    cin>>a>>b>>c;
+    max = a;
+    if(b>max)
+    {
+        max = b;
+    }
+    if(c>max)
+    {
+        max = c;
+    }
+    min = a;
+    if (min>b)
+    {
+        min = b;
+    }
+    if(min>c)
+    {
+        min = c;
+    }
+    cout<<max<<" is maximum among all three."<<endl;
+    cout<<min<<" is minimum among all three.";
+    
+    return 0;
+}   
+
+
+-------------------------------------------------------------------------------------------
+
+	2. Define a program to find out whether a given number is even or odd.
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a;
+   cout<<"Enter a number: "<<endl;
+   cin>>a;
+   if(a%2 == 0)
+   {
+      cout<<a<<" is an even number.";
+   }
+   else
+   {
+      cout<<a<<" is an odd number.";
+   }
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------
+
+	3. A person is eligible to vote if his/her age is greater than or equal to 18. Define a method to find out if he/she is eligible to vote.
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int age;
+   cout<<"Enter your age: ";
+   cin>>age;
+   if(age >= 18)
+   {
+      cout<<"You're eligible to vote.";
+   }
+   else
+   {
+      cout<<"You're not eligible to vote.";
+   }
+   return 0;
+}
+
+
+-------------------------------------------------------------------------------------------
+
+	4. Write a program to print the sum of two numbers entered by user by defining your own method. https://code4coding.com/addition-of-two-numbers-in-java-using-method/
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, b;
+   cout<<"Enter two numbers: "<<endl;
+   cin>>a>>b;
+   cout<<"The sum of two numbers is: "<<a + b;
+   return 0;
+}
+ 
+
+-------------------------------------------------------------------------------------------
+
+	5. Define a method that returns the product of two numbers entered by user. https://code4coding.com/java-program-to-multiply-two-numbers-using-method/
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, b;
+   cout<<"Enter two numbers: "<<endl;
+   cin>>a>>b;
+   cout<<"The product of two numbers is: "<<a*b;
+   return 0;
+}
+
+
+-------------------------------------------------------------------------------------------
+
+	6. Write a program to print the circumference and area of a circle of radius entered by user by defining your own method.Java Program to calculate area and circumference of circle (beginnersbook.com)
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int r;
+   double cir, area;
+   cout<<"Enter radius of circle: ";
+   cin>>r;
+   cir = (2*3.141*r);
+   area = (3.141*r*r);
+   cout<<"Circumference of circle is: "<<cir<<endl;
+   cout<<"Area of circle is: "<<area;
+   return 0;
+}
+
+
+-------------------------------------------------------------------------------------------
+
+	7. Define a method to find out if a number is prime or not. https://www.geeksforgeeks.org/java-program-to-check-if-a-number-is-prime-or-not/
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a;
+   cout<<"Enter the number: "<<endl;
+   cin>>a;
+   if(a == 2 || a == 3)
+   {
+      cout<<a<<" is prime.";
+   }
+   else if(a%2 == 0 && a%3 == 0)
+   {
+      cout<<a<<" is not prime number.";
+   }
+   else
+   {
+      cout<<a<<" is prime number.";
+   }
+   
+   return 0;
+}
+
+
+-------------------------------------------------------------------------------------------
+
+	8. Write a program that will ask the user to enter his/her marks (out of 100). Define a method that will display grades according to the marks entered as below: (https://www.techcrashcourse.com/2017/02/java-program-to-calculate-grade-of-students.html
+	
+<br/>
+<pre> 
+Marks        Grade 
+91-100         AA 
+81-90          AB 
+71-80          BB 
+61-70          BC 
+51-60          CD 
+41-50          DD 
+<=40          Fail 
+</pre>
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a;
+   cout<<"Enter your marks out of 100: ";
+   cin>>a;
+   if(90 < a && a <=100)
+   {
+      cout<<"Grade: AA";
+   }
+   
+   else if(80 < a && a <=90)
+   {
+      cout<<"Grade: AB";
+   }
+   else if(70 < a && a <=80)
+   {
+      cout<<"Grade: BB";
+   }
+   else if(60 < a && a <=70)
+   {
+      cout<<"Grade: BC";
+   }
+   else if(50 < a && a <=60)
+   {
+      cout<<"Grade: CC";
+   }
+   else if(40 < a && a <=50)
+   {
+      cout<<"Grade: CD";
+   }
+   else if(30 < a && a <=40)
+   {
+      cout<<"Grade: DD";
+   }
+   else
+   {
+      cout<<"Fail";
+   }
+
+
+-------------------------------------------------------------------------------------------
+	9. Write a program to print the factorial of a number by defining a method named 'Factorial'. https://www.javatpoint.com/factorial-program-in-java 
+	
+Factorial of any number n is represented by n! and is equal to 1 * 2 * 3 * .... * (n-1) *n. E.g.- <br/>
+<pre>
+4! = 1 * 2 * 3 * 4 = 24 
+3! = 3 * 2 * 1 = 6 
+2! = 2 * 1 = 2 
+Also, 
+1! = 1 
+0! = 1
+</pre>
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a;
+
+   cout<<"Enter number: ";
+   cin>>a;
+
+   int factorial = 1;
+
+   for(int i = a ; i > 0; i--)
+   {
+      //factorial = factorial * i;
+      factorial *= i;
+   }
+
+   cout<<"The factorial of "<<a<<" is: "<<factorial;
+   return 0;
+}
